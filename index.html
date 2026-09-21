@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Фитнес-клубы Уфы: годовой абонемент, оснащение и рейтинги (2026)</title>
+<meta name="description" content="Сравнение 17 фитнес-клубов Уфы: цена годового абонемента, бассейн, тренажёрный зал, групповые занятия, рейтинг и разбор отзывов.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&amp;family=Golos+Text:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#E7EAE9;--surface:#fff;--ink:#0E1416;--muted:#586466;--rule:#C7CFD0;--accent:#1746C8;--teal:#0D7268;--amber:#A65A08;--off:#8E9A9C;--tint:#F3F5F5}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:15px;line-height:1.5}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px 72px}
+h1{font-family:Unbounded,"Golos Text",sans-serif;font-weight:700;font-size:clamp(26px,4.4vw,50px);line-height:1.04;letter-spacing:-.02em;margin:0 0 12px}
+h2{font-family:Unbounded,"Golos Text",sans-serif;font-weight:500;font-size:15px;letter-spacing:.02em;margin:0 0 14px;text-transform:none}
+a{color:var(--accent)}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500}
+header.top{padding:40px 0 8px}
+.lede{max-width:62ch;color:var(--muted);margin:0 0 26px;font-size:16px}
+.scale{position:relative;height:150px;margin:0 0 6px;border-top:1px solid var(--rule)}
+.band{position:absolute;top:0;bottom:34px;border-left:1px dashed var(--rule)}
+.band span{position:absolute;top:6px;left:8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--off)}
+.axis{position:absolute;left:0;right:0;bottom:34px;height:1px;background:var(--rule)}
+.tick{position:absolute;bottom:34px;width:1px;height:9px;background:var(--rule)}
+.tick i{position:absolute;top:14px;left:0;transform:translateX(-50%);font-size:11px;color:var(--off);font-style:normal;white-space:nowrap}
+.dot{position:absolute;bottom:28px;width:11px;height:11px;border-radius:50%;background:var(--accent);transform:translateX(-50%);cursor:default;box-shadow:0 0 0 3px var(--bg)}
+.dot.t{pottom:0}
+.dot:hover{background:var(--ink)}
+.dlab{position:absolute;bottom:44px;font-size:11px;line-height:1.15;color:var(--ink);white-space:nowrap;transform:translateX(-50%);text-align:center;font-weight:500}
+.dlab em{display:block;color:var(--muted);font-style:normal;font-size:10.5px}
+.scaleNote{font-size:12.5px;color:var(--muted);margin:16px 0 0}
+.stats{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--rule);background:var(--surface);margin:26px 0}
+.stat{flex:1 1 160px;padding:14px 18px;border-right:1px solid var(--rule)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-size:22px;font-variant-numeric:tabular-nums;font-weight:700}
+.stat span{font-size:12px;color:var(--muted);letter-spacing:.04em}
+.controls{background:var(--surface);border:1px solid var(--rule);padding:16px 18px;margin:0 0 22px}
+.ctlrow{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:flex-end}
+.field{display:flex;flex-direction:column;gap:5px}
+.field label{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+select,input[type=search]{font:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--rule);background:var(--tint);color:var(--ink);border-radius:0;min-width:150px}
+input[type=search]{min-width:220px}
+.chk{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted)}
+.chk input{width:16px;height:16px;accent-color:var(--accent)}
+button.reset{font:inherit;font-size:13.5px;padding:8px 14px;background:none;border:1px solid var(--rule);color:var(--muted);cursor:pointer}
+button.reset:hover{color:var(--ink);border-color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.chip{font:inherit;font-size:13px;padding:6px 12px;border:1px solid var(--rule);background:none;color:var(--muted);cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.count{font-size:13px;color:var(--muted);margin:0 0 10px}
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--rule)}
+th,td{text-align:left;vertical-align:top;padding:12px 12px;border-bottom:1px solid var(--rule)}
+thead th{position:sticky;top:0;background:var(--surface);z-index:2;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;white-space:nowrap}
+th.sortable{cursor:pointer;user-select:none}
+th.sortable:hover{color:var(--ink)}
+th[aria-sort]::after{content:"";}
+th[aria-sort=ascending] .ar{color:var(--accent)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+td.nm b{font-size:15.5px;display:block}
+td.nm span{font-size:12.5px;color:var(--muted)}
+.pill{display:inline-block;font-size:12.5px;padding:2px 8px;border:1px solid var(--rule);white-space:nowrap}
+.pill.y{border-color:var(--teal);color:var(--teal)}
+.pill.n{color:var(--off)}
+.price{font-size:19px;font-weight:700;font-variant-numeric:tabular-nums}
+.price.na{font-size:14px;font-weight:500;color:var(--amber)}
+.bar{height:5px;background:var(--accent);margin-top:6px;min-width:3px}
+.note{font-size:12px;color:var(--muted);margin-top:5px;max-width:34ch}
+.rate{font-size:17px;font-weight:700;font-variant-numeric:tabular-nums}
+.votes{font-size:12px;color:var(--muted)}
+.ver{font-size:13px;color:var(--muted);max-width:38ch}
+.badge{display:inline-block;font-size:11px;padding:2px 7px;border:1px solid var(--rule);color:var(--muted);margin-top:6px}
+.cards{display:none}
+.card{background:var(--surface);border:1px solid var(--rule);padding:16px;margin-bottom:12px}
+.card h3{font-family:Unbounded,"Golos Text",sans-serif;font-size:17px;font-weight:700;margin:0 0 2px}
+.card .addr{font-size:12.5px;color:var(--muted);margin-bottom:10px}
+.card dl{display:grid;grid-template-columns:auto 1fr;gap:5px 12px;margin:0 0 10px;font-size:13.5px}
+.card dt{color:var(--muted)}
+.card dd{margin:0}
+.card .ver{border-top:1px solid var(--rule);padding-top:10px;max-width:none}
+footer{color:var(--muted);font-size:13px;margin-top:34px;border-top:1px solid var(--rule);padding-top:20px}
+footer h2{color:var(--ink)}
+footer ul{margin:0 0 14px;padding-left:18px}
+footer li{margin-bottom:5px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:900px){table,.count{display:none}.cards{display:block}.scale{height:190px}}
+@media (max-width:560px){.stats{flex-direction:column}.stat{border-right:0;border-bottom:1px solid var(--rule)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.band.b1{background:color-mix(in oklab,var(--teal) 10%,transparent)}
+.band.b2{background:color-mix(in oklab,var(--accent) 7%,transparent)}
+.band.b3{background:color-mix(in oklab,var(--amber) 10%,transparent)}
+.band em{position:absolute;top:24px;left:8px;font-style:normal;font-size:10.5px;line-height:1.3;color:var(--muted)}
+.band.b1 span{color:var(--teal)}
+.band.b2 span{color:var(--accent)}
+.band.b3 span{color:var(--amber)}
+.btag{display:inline-block;margin-top:6px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border:1px solid var(--rule);color:var(--muted)}
+.btag.b1{color:var(--teal);border-color:color-mix(in oklab,var(--teal) 45%,transparent)}
+.btag.b2{color:var(--accent);border-color:color-mix(in oklab,var(--accent) 45%,transparent)}
+.btag.b3{color:var(--amber);border-color:color-mix(in oklab,var(--amber) 45%,transparent)}
+.gprog{font-size:12.5px;color:var(--muted);max-width:26ch}
+.seg{white-space:normal}
+.drive{min-width:210px;font-size:12.5px;line-height:1.45}
+.drive b{font-weight:500}
+.dnote{color:var(--muted);margin-top:5px}
+.seg em{display:block;margin-top:6px;font-style:normal;font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.btag.b12{background:linear-gradient(90deg,color-mix(in oklab,var(--teal) 20%,transparent),color-mix(in oklab,var(--accent) 16%,transparent));color:var(--ink);border-color:var(--rule)}
+.btag.none{color:var(--off);border-style:dashed}
+
+.gym{min-width:236px}
+.gyear{font-size:12.5px;color:var(--muted);line-height:1.4}
+.gquote{font-size:12.5px;color:var(--ink);line-height:1.4;margin-top:5px;padding-left:8px;border-left:2px solid var(--accent)}
+.card .gquote{max-width:none}
+.suro{background:var(--surface);border:1px solid var(--rule);padding:20px 22px;margin:0 0 24px}
+.suro h2{margin:0 0 10px;font-size:17px}
+.suro p{margin:0 0 10px;font-size:14px;color:var(--muted)}
+.suro ul{margin:0;padding-left:18px;font-size:14px;color:var(--muted)}
+.suro li{margin-bottom:5px}
+.suro b{color:var(--ink);font-weight:500}
+</style></head><body>
+<div class="wrap">
+<header class="top">
+ <div class="eyebrow">Уфа · сентябрь 2026 · 16 клубов + Суровка Fit</div>
+ <h1>Год в фитнес-клубе Уфы стоит от 7 до 80 тысяч. Разница — в 11 раз</h1>
+ <p class="lede">Одна таблица: цена годового абонемента с сегментом рынка, бассейн, тренажёрный зал, групповые и то, что реально пишут в отзывах. Сортировка и фильтры — ниже, кликните по заголовку столбца.</p>
+ <div class="scale" id="scale"></div>
+ <p class="scaleNote" id="snote">Точки — Один клуб (Mayakofsky Fitness) годовой прайс не публикует вообще — его на шкале нет.</p>
+</header>
+<section class="stats">
+ <div class="stat"><b id="minp">—</b><span>САМЫЙ ДЕШЁВЫЙ ГОД</span></div>
+ <div class="stat"><b id="med">—</b><span>МЕДИАНА ПО РЫНКУ</span></div>
+ <div class="stat"><b id="pools">—</b><span>КЛУБОВ С БАССЕЙНОМ</span></div>
+ <div class="stat"><b>2 944</b><span>ОЦЕНОК У ЛИДЕРА ПО ОТЗЫВАМ</span></div>
+</section>
+<section class="suro">
+ <h2>Сравнение с Суровка Fit</h2>
+ <p>Условия расчёта: <b>4 поездки в неделю = 208 за год</b> (туда-обратно), бензин <b>68 ₽/л</b>, расход <b>8 л/100 км</b>. Дорога до Суровки (д. Суровка, ул. Родниковая, 1) от ул. Кирова, 44 — <b>18,8 км</b> в одну сторону, у вас <b>30 минут</b> в одну сторону.</p>
+ <ul>
+  <li>Годовой пробег до Суровки: <b>7 821 км</b>, это <b>626 л</b> и <b>42 500 ₽</b> на бензин в год — вдвое больше самого абонемента (18 500 ₽).</li>
+  <li>Время за рулём: <b>208 часов в год</b> (по 60 минут на поездку).</li>
+  <li>Вилка по расходу: 7 л/100 км — 37 200 ₽, 8 — 42 500 ₽, 10 — 53 200 ₽, 12 — 63 800 ₽ в год.</li>
+  <li>Экономия при переходе = разница в бензине плюс разница в абонементе. Считается от базы 18 500 ₽ и 42 500 ₽ бензина.</li>
+ </ul>
+</section>
+<section class="controls">
+ <div class="ctlrow">
+  <div class="field"><label for="q">Поиск</label><input type="search" id="q" placeholder="название, район, адрес"></div>
+  <div class="field"><label for="fp">Бассейн</label><select id="fp"><option value="any">любой</option><option value="y">только с бассейном</option><option value="n">только без бассейна</option></select></div>
+  <div class="field"><label for="fr">Рейтинг</label><select id="fr"><option value="any">любой</option><option value="y">высокий, 4,8+</option></select></div>
+  <div class="field"><label for="sort">Сортировка</label><select id="sort"><option value="pa">цена: по возрастанию</option><option value="pd">цена: по убыванию</option><option value="r">рейтинг</option><option value="v">число отзывов</option><option value="n">название</option></select></div>
+  <label class="chk"><input type="checkbox" id="only">только с известной ценой</label>
+  <button class="reset" id="reset">Сбросить</button>
+ </div>
+ <div class="chips">
+  <button class="chip" data-k="fp:any" data-def="1" aria-pressed="true">Все 17</button>
+  <button class="chip" data-k="fp:y" aria-pressed="false">С бассейном</button>
+  <button class="chip" data-k="fp:n" aria-pressed="false">Без бассейна</button>
+  <button class="chip" data-k="fr:y" aria-pressed="false">Рейтинг 4,8+</button>
+ </div>
+</section>
+<p class="count" id="count"></p>
+<table><caption class="sr">Сравнение фитнес-клубов Уфы</caption>
+<thead><tr>
+ <th class="sortable" data-s="n">Клуб и адрес <span class="ar">↕</span></th>
+ <th>Бассейн</th><th>Тренажёрный зал</th><th>Групповые программы</th>
+ <th class="sortable num" data-s="pa">Годовой абонемент <span class="ar">↕</span></th><th>Дорога и бензин</th><th>Сегмент и цена</th>
+ <th class="sortable num" data-s="r">Рейтинг <span class="ar">↕</span></th>
+ <th>Что говорят в отзывах</th><th>Сайт</th>
+</tr></thead><tbody id="tb"></tbody></table>
+<div class="cards" id="cards"></div>
+<footer>
+ <h2>Как читать эту таблицу</h2>
+ <ul>
+  <li><b>Цены</b> собраны 21 сентября 2026 года из открытых источников: прайсы клубов, акции на их сайтах, карточки организаций на Яндекс.Картах и 2ГИС. Почти везде это акционная цена, а не прайсовая.</li>
+  <li><b>Рейтинги и число оценок</b> — Яндекс.Карты, за исключением Mayakofsky, где приведены оба источника. Оценка на картах — не качество клуба, а склонность его клиентов ставить оценки: у клуба с 45 оценками 4,4 и у клуба с 2 944 оценками 5,0 — разные по надёжности цифры.</li>
+  <li><b>«Что говорят в отзывах»</b> — автоматический разбор текстов отзывов: считались упоминания типовых тем (очереди, духота, запах хлорки, чистота, тренеры). Цифры в скобках — число таких упоминаний. Это ориентир, а не измерение качества.</li>
+  <li><b>Это не все 75 клубов города</b> из каталогов, а 17 клубов и известных: собрать честные данные по всем невозможно, малые залы прайс не публикуют.</li>
+  <li><b>Дорога и бензин</b> — расчёт от ул. Кирова, 44: расстояния дорожные, время в свободном потоке и с поправкой на вечерний пик (+40%), бензин — 208 поездок в год, 68 ₽/л, 8 л/100 км. «Экономия» считается относительно поездок в Суровка Fit (18,8 км в одну сторону, 42 500 ₽ бензина в год), итог с абонементом — с учётом разницы в цене годовой карты от 18 500 ₽.</li>
+  <li><b>Сегмент</b> — место клуба на шкале цен: Бюджет — до 15 000 ₽, Средний — 15 000–40 000 ₽, Премиум — от 40 000 ₽. Тег стоит у каждого клуба, чей прайс известен; если цена задана диапазоном и пересекает две полосы, в теге указаны обе (Mendeleef — 15 000–38 000 ₽). Mayakofsky прайс не публикует, поэтому тега нет.</li>
+  <li><b>Тренажёрный зал</b> есть во всех клубах, поэтому столбец — про <b>год и качество оборудования</b>: когда зал открылся или обновился и что пишут в отзывах о его состоянии. Марки называют лишь часть клубов: Technogym и Matrix — Persona Basis, Precor, Neverest, Foreman Fitness — Spirit, Impulse — Тетраэдр, Impulse и Shua — ЦЕХ. <b>Групповые программы</b> — перечень видов занятий по расписанию и спискам направлений клуба. Где полной сетки в открытом доступе нет (Тетраэдр, Mayakofsky, DDX, ЦЕХ, Fitness Land, World Class), это указано прямо в ячейке.</li>
+  <li>Бассейн «есть» означает, что он заявлен в услугах клуба или в карточке организации. У B-Gym бассейн — отдельный объект сети на 8 Марта, 7А, включён в подписку.</li>
+ </ul>
+ <h2>Источники</h2>
+ <ul>
+  <li><a href="https://yandex.ru/maps/org/zorge_fitness/1714061605/" target="_blank" rel="noopener">Яндекс.Карты — Zorge Fitness</a>, <a href="https://yandex.ru/maps/org/mendeleyef_fitnes/1069683634/" target="_blank" rel="noopener">Mendeleef Fitness</a>, <a href="https://yandex.ru/maps/org/orange_fitness/1189158387/" target="_blank" rel="noopener">Orange Fitness</a>, <a href="https://yandex.ru/maps/org/personabazis/1075864676/" target="_blank" rel="noopener">Persona Basis</a>, <a href="https://yandex.ru/maps/org/mayakofsky_fitness/99485244394/" target="_blank" rel="noopener">Mayakofsky</a>, <a href="https://yandex.ru/maps/org/tetraedr/199136621221/" target="_blank" rel="noopener">Тетраэдр</a>, <a href="https://yandex.ru/maps/org/world_class/1122023550/" target="_blank" rel="noopener">World Class</a></li>
+  <li><a href="https://ufa.metrofitness.ru/aktsii-02" target="_blank" rel="noopener">Metrofitness — акции</a>, <a href="https://b-gym.ru/price" target="_blank" rel="noopener">B-Gym — прайс</a>, <a href="https://tetraedr.ru/" target="_blank" rel="noopener">Тетраэдр — тарифы</a>, <a href="https://www.worldclass-ufa.ru/cards/" target="_blank" rel="noopener">World Class — виды членства</a>, <a href="https://spiritfit.ru/ufa/" target="_blank" rel="noopener">Spirit Fitness</a></li>
+  <li><a href="https://www.kp.ru/russia/ufa/luchshie-fitnes-kluby-v-ufe/" target="_blank" rel="noopener">КП: рейтинг фитнес-клубов Уфы</a> (средние цены по городу: безлимит на год от 28 000 ₽)</li>
+ </ul>
+ <p>Собрано 21.09.2026. Цены и акции меняются: перед покупкой сверяйтесь с клубом.</p>
+</footer>
+</div>
+<script>const D=[
+ {
+  "n": "Space Fitness",
+  "a": "ул. Зенцова, 73 (бывш. LEO FIT)",
+  "d": "Ленинский, исторический центр",
+  "s": "spacefitness.ru",
+  "u": "https://spacefitness.ru/",
+  "p": 1,
+  "pn": "2 дорожки по 25 м, аквааэробика",
+  "g": 1,
+  "gr": "Тренировка всего тела, Дышим солью, Upper body, Lower body, Йога, Пилатес, Сайкл, Стретчинг, Танцевальные программы, Кроссфит, Женский бокс, Здоровая спина + растяжка, Аэробика, Настольный теннис. Заявлено 50+ направлений, включая программы для людей с ограничениями по здоровью; полная сетка — в разделе «Расписание» на сайте.",
+  "pr": 30990,
+  "pl": "30 990 ₽",
+  "pnote": "Акция до 30.09.2026: 12 месяцев + 30 дней заморозки + сертификат — 30 990 ₽. Площадка бывшего LEO FIT (тот же адрес, 3 500 м²)",
+  "r": 4.7,
+  "v": 277,
+  "rv": 241,
+  "ver": "4,7 при 277 оценках на 2ГИС (241 отзыв; на Яндекс.Картах — 206 отзывов). Хвалят оборудование, персонал и «ценник ниже, чем в модных клубах»; есть бассейн, сауны и соляная комната.",
+  "gy": "Клуб на площадке бывшего LEO FIT; год обновления зала не раскрыт",
+  "gq": "«современное оборудование в хорошем состоянии», «тренажёров много, очередей не бывает»",
+  "seg": "Средний сегмент",
+  "segc": "b2",
+  "km": 2.5,
+  "tmin": 4,
+  "tpeak": 6,
+  "fuel": 5658,
+  "save": 36887,
+  "tot": 24397,
+  "base": 0
+ },
+ {
+  "n": "Фитнес-Арена 3000",
+  "a": "ул. Менделеева, 134/7",
+  "d": "Кировский, Зелёная Роща",
+  "s": "fitness3000.ru",
+  "u": "https://fitness3000.ru/",
+  "p": 0,
+  "pn": "нет (сауна, джакузи, купель с ледяной водой)",
+  "g": 1,
+  "gr": "Фитнес-йога, Силовая йога, Женская йога, Йога-пробуждение, Пилатес, Стретчинг, МФР, Порт-де-бра (PortDeBras), Хореография, Степ, Интервальная ХИТ, Штанга, Кросс-тренинг, Функциональная ЛАЙТ, КОМБО, Тренировка на петлях, Здоровое долголетие, Мягкий формат, Бокс, Кикбоксинг, Фитнес, Женская пластика, Каблуки, Леди-стиль, Кроссфит, Кинезио, Настольный теннис. Всего 40+ видов по расписанию, часть классов — коммерческие (за доплату).",
+  "pr": 30900,
+  "pl": "≈ 30 900 ₽",
+  "pnote": "Полная годовая карта — 2 575 ₽/мес при банковской рассрочке на 12 мес без переплат (акция 01–30.09.2026)",
+  "r": 5.0,
+  "v": 2070,
+  "rv": 652,
+  "ver": "5,0 при 2 070 оценках: 6 000 м², 220 тренажёров, свой беговой трек. Хвалят простор и отсутствие очередей, но в часы пик «народу многовато».",
+  "gy": "Зал работает с 2006 г.; обновляется — в 2026 добавили новые тренажёры (220 единиц, 1 200 м² + зал свободных весов 150 м²)",
+  "gq": "«очередей нет — тренажёров 220», претензий к износу в отзывах нет",
+  "seg": "Средний сегмент",
+  "segc": "b2",
+  "km": 4.2,
+  "tmin": 7,
+  "tpeak": 10,
+  "fuel": 9505,
+  "save": 33040,
+  "tot": 20640,
+  "base": 0
+ },
+ {
+  "n": "Fitness Land",
+  "a": "ул. Пархоменко, 156/3, БЦ «Маяк», 3 эт.",
+  "d": "Советский",
+  "s": "fitness-land.ru",
+  "u": "https://fitness-land.ru/",
+  "p": 0,
+  "pn": "нет (сауна, массажный кабинет)",
+  "g": 1,
+  "gr": "Аэробика, Зумба, Йога, Кроссфит, Боевые искусства, Настольный теннис, кардио- и силовые классы, групповые тренировки для женщин. Заявлено более 20 групповых занятий; публичной сетки на сайте нет — расписание в клубе.",
+  "pr": 14900,
+  "pl": "от 14 900 ₽",
+  "pnote": "2ГИС: годовой от 14 900 ₽, месячный от 4 900 ₽; на сайте прайс только по запросу",
+  "r": 4.7,
+  "v": 336,
+  "rv": null,
+  "ver": "Оценка 4,7 при 336 оценках. Хвалят атмосферу, персонал и сауну; клуб камерный, без бассейна.",
+  "gy": "Клуб более 20 лет; «американское оборудование премиум-класса» (заявление клуба, год обновления не раскрыт)",
+  "gq": "«тренажёры современные и в хорошем состоянии»",
+  "seg": "Бюджет",
+  "segc": "b1",
+  "km": 1.6,
+  "tmin": 3,
+  "tpeak": 4,
+  "fuel": 3621,
+  "save": 38924,
+  "tot": 42524,
+  "base": 0
+ },
+ {
+  "n": "Тетраэдр",
+  "a": "ул. Комсомольская, 152",
+  "d": "Октябрьский, «Планета»",
+  "s": "tetraedr.ru",
+  "u": "https://tetraedr.ru/",
+  "p": 1,
+  "pn": "3 бассейна, спорт. 25 м / 10 дорожек",
+  "g": 1,
+  "gr": "Более 140 видов занятий в месяц: групповые и функциональные форматы, бассейн, студийные направления. Публичной сетки нет — расписание и запись только в приложении «ТЕТРАЭДР» и в личном кабинете на сайте.",
+  "pr": 80000,
+  "pl": "80 000 ₽",
+  "pnote": "Тариф Т1 (12 мес). Т2 — 120 000 ₽, 24 мес — 180 000 ₽. Всё включено: 10 ПТ, 10 гостевых, солярий, термальный комплекс",
+  "r": 4.4,
+  "v": 45,
+  "rv": null,
+  "ver": "Новый клуб, открылся 16.07.2026 — всего 45 оценок. Хвалят чистоту и масштаб, но выборки для вывода пока мало.",
+  "gy": "Открыт 20 августа 2026 — зал новый, тренажёры Impulse («Импульс»)",
+  "gq": "«тренажёры современные, удобные в использовании»",
+  "seg": "Премиум",
+  "segc": "b3",
+  "km": 6.3,
+  "tmin": 9,
+  "tpeak": 13,
+  "fuel": 14257,
+  "save": 28288,
+  "tot": -33212,
+  "base": 0
+ },
+ {
+  "n": "Mayakofsky Fitness",
+  "a": "ул. Цюрупы, 32",
+  "d": "Центр",
+  "s": "mayakofsky.ru",
+  "u": "https://mayakofsky.ru/",
+  "p": 1,
+  "pn": "25 м + детский и юниорский",
+  "g": 1,
+  "gr": "Групповые программы и аквааэробика в 25-метровом бассейне. Публичной сетки расписания нет — только через клуб (тел. 285-99-99) и мобильное приложение.",
+  "pr": null,
+  "pl": "по запросу",
+  "pnote": "Прайс не публикуется: офис продаж, тел. 285-99-99",
+  "r": 4.5,
+  "v": 82,
+  "rv": 69,
+  "ver": "Открылся 19.06.2026. Расхождение источников: Яндекс 4,5 (82 оценки) против 4,9 (279 оценок) на 2ГИС.",
+  "gy": "Открыт в 2026 — «новейшее оборудование от мировых брендов», марки не раскрыты",
+  "gq": "«современное оборудование», «много тренажёров»",
+  "seg": "—",
+  "segc": "none",
+  "km": 1.1,
+  "tmin": 2,
+  "tpeak": 3,
+  "fuel": 2489,
+  "save": 40056,
+  "tot": 40056,
+  "base": 0
+ },
+ {
+  "n": "Zorge Fitness",
+  "a": "ул. Рихарда Зорге, 75",
+  "d": "Советский",
+  "s": "zorgefitness.ru",
+  "u": "https://zorgefitness.ru/",
+  "p": 1,
+  "pn": "3 бассейна, основной 25 м",
+  "g": 1,
+  "gr": "Йога (Йога Старт, Пранаямы), Пилатес, Контемп, Сайклинг, Памп, БОСУ, Фитбол, Афро-микс, Восточный танец, Латина, Зумба, Стрип-пластика, Танцы, Растяжка, Пресс+растяжка, Сила, Степ, Тотал, Фит, Микс, Мама+. Сетка — на сайте клуба (r-zorgefitness.ru).",
+  "pr": 50700,
+  "pl": "≈ 50 700 ₽",
+  "pnote": "Акция «139 ₽/день» при покупке годовой карты; агрегатор даёт от 56 000 ₽",
+  "r": 5.0,
+  "v": 2944,
+  "rv": 945,
+  "ver": "Самая большая база отзывов в городе (2 944 оценки) при рейтинге 5,0. Чаще всего хвалят тренеров, график 24/7 и бесплатную парковку.",
+  "gy": "Год обновления не раскрыт; заявлены тренажёрный зал, кардиолиния, силовые тренажёры",
+  "gq": "«нормальные тренажёры», «в тренажёрном зале всегда чисто»",
+  "seg": "Премиум",
+  "segc": "b3",
+  "km": 6.7,
+  "tmin": 11,
+  "tpeak": 15,
+  "fuel": 15162,
+  "save": 27383,
+  "tot": -4817,
+  "base": 0
+ },
+ {
+  "n": "Spirit Fitness",
+  "a": "ул. Минигали Губайдуллина, 6, ТЦ «Аркада»",
+  "d": "Советский, Зелёная роща",
+  "s": "spiritfit.ru/ufa",
+  "u": "https://spiritfit.ru/ufa/",
+  "p": 0,
+  "pn": "нет (сауна, хаммам, соляная комната)",
+  "g": 1,
+  "gr": "Качай! Все тело, Качай! Верх тела, Качай! Ягодицы (ГП/ТЗ), Качай! Умный старт, Сияй! Йога, Сияй! Пилатес, Сияй! Растяжка, Сияй! Релакс + МФР, Жги! Вело, Жги! ВелоХИИТ, Жги! Танцы, Жги! Интервалы, Жги! Зумба, Медитация! Душа в теле, Медитация! Подзарядка — плюс онлайн-версии этих же классов. Полная сетка по дням: spiritfit.ru/ufa/schedule.",
+  "pr": 36000,
+  "pl": "от 36 000 ₽",
+  "pnote": "Подписка от 1 700 ₽/мес, оплата раз в год или ежемесячно",
+  "r": 5.0,
+  "v": 275,
+  "rv": 219,
+  "ver": "5,0, но всего 275 оценок — клуб молодой. Хвалят чистоту и СПА-зону, в минусах встречаются очереди и духота.",
+  "gy": "Клуб в Уфе открыт в 2025 — всё оборудование новое: Precor, Neverest, Foreman Fitness",
+  "gq": "«тренажёры все современные и новые», «отсутствие очередей к тренажёрам»",
+  "seg": "Средний сегмент",
+  "segc": "b2",
+  "km": 3.0,
+  "tmin": 6,
+  "tpeak": 8,
+  "fuel": 6789,
+  "save": 35756,
+  "tot": 18256,
+  "base": 0
+ },
+ {
+  "n": "ЦЕХ · фитнес с характером",
+  "a": "ул. Ростовская, 18Б",
+  "d": "Кировский",
+  "s": "tsehfit.ru",
+  "u": "https://tsehfit.ru/",
+  "p": 0,
+  "pn": "нет",
+  "g": 1,
+  "gr": "Функционал (для новичков и профи), Йога, TRX, Джампинг, Кроссфит, Аэробика, Бодифлекс, OCR — подготовка к «Гонке Героев», группы до 12 человек. Заявлено 20+ направлений; сетка — на сайте и в приложении.",
+  "pr": 29900,
+  "pl": "от 29 900 ₽",
+  "pnote": "Годовой абонемент по данным Фламп; месячный от 3 900 ₽, дневной 4 800 ₽",
+  "r": 5.0,
+  "v": 302,
+  "rv": 125,
+  "ver": "Позиционируется как зал «без толпы» — и в отзывах жалоб на переполненность почти нет, рейтинг 5,0 при 302 оценках.",
+  "gy": "«Премиальное сертифицированное оборудование» Impulse и Shua; год открытия не раскрыт",
+  "gq": "«много тренажёров, не приходится ждать очереди», «оборудование соответствует всем требованиям»",
+  "seg": "Средний сегмент",
+  "segc": "b2",
+  "km": 5.3,
+  "tmin": 8,
+  "tpeak": 11,
+  "fuel": 11994,
+  "save": 30551,
+  "tot": 19151,
+  "base": 0
+ },
+ {
+  "n": "Persona Basis",
+  "a": "ул. Пушкина, 45/2",
+  "d": "Ленинский, центр",
+  "s": "personabasis.ru",
+  "u": "https://personabasis.ru/",
+  "p": 1,
+  "pn": "24 м, релакс-зона с джакузи",
+  "g": 1,
+  "gr": "TRX Circuit / TRX Basic, Pump / Total Body, Cycle, «-1000 калорий», Fly Stretch, Stretch, Pilates, Yoga / Hatha Yoga / Yoga 90, Клубная латина, Flow / Inside Move, Strip plastic, Zumba / Dance mix. Заявлено более 40 направлений.",
+  "pr": 21250,
+  "pl": "от 18 000–21 250 ₽",
+  "pnote": "Данные агрегаторов; на сайте — 27 000 ₽ при покупке блока из 10 тренировок; подписка 4 400 ₽/мес",
+  "r": 4.9,
+  "v": 1065,
+  "rv": 389,
+  "ver": "4,9 при 1 065 оценках — стабильно высоко. Хвалят тренеров и детский клуб Persona Kids, типовых жалоб в выгрузке нет.",
+  "gy": "Technogym и Matrix; год обновления не раскрыт (холдинг Persona Sport с 2009 г.)",
+  "gq": "«современное оборудование, грамотные тренеры, чистота»",
+  "seg": "Средний сегмент",
+  "segc": "b2",
+  "km": 2.9,
+  "tmin": 5,
+  "tpeak": 7,
+  "fuel": 6563,
+  "save": 35982,
+  "tot": 33232,
+  "base": 0
+ },
+ {
+  "n": "Orange Fitness",
+  "a": "ул. Софьи Перовской, 13/3",
+  "d": "Кировский",
+  "s": "orangefitness-ufa.ru",
+  "u": "https://orangefitness-ufa.ru/",
+  "p": 1,
+  "pn": "3 бассейна, гидротермальный комплекс",
+  "g": 1,
+  "gr": "AQUA AUTOGRAPH, AQUA CIRCUIT, AQUA ACTIVE DUMBBELS, BODY CONDITION, BODY LOW, CORE, FUNCTIONAL TRAINING, GO PUMP, Go Bike, PILATES, STRETCH, YOGA, ZUMBA, Women BOXING, детские группы, отдельные залы кроссфита и бокса. Сетка: orangefitness-ufa.ru/timetable.",
+  "pr": 24900,
+  "pl": "24 900–36 900 ₽",
+  "pnote": "Диапазон по типам карт на Яндекс.Картах — зависит от набора зон",
+  "r": 5.0,
+  "v": 1278,
+  "rv": 467,
+  "ver": "5,0 при 1 278 оценках. Хвалят персонал и бассейн, единичные жалобы — духота в залах.",
+  "gy": "Клуб в Уфе с 2005 г. (свыше 20 лет); марки и год обновления не раскрыты",
+  "gq": "«большой зал, множество разнообразных тренажёров, отдельные залы для кардио»",
+  "seg": "Средний сегмент",
+  "segc": "b2",
+  "km": 5.0,
+  "tmin": 9,
+  "tpeak": 13,
+  "fuel": 11315,
+  "save": 31230,
+  "tot": 24830,
+  "base": 0
+ },
+ {
+  "n": "DDX Fitness «Уфа Семья»",
+  "a": "пр. Октября, 34, ТРК «Семья»",
+  "d": "Советский",
+  "s": "ddxfitness.ru",
+  "u": "https://www.ddxfitness.ru/",
+  "p": 0,
+  "pn": "нет (спа-зона, хаммам)",
+  "g": 1,
+  "gr": "TRX, интервальные тренировки, Body Pump, йога, функциональные классы. Сетка расписания — в мобильном приложении DDX Fitness.",
+  "pr": 23800,
+  "pl": "от 23 800 ₽",
+  "pnote": "Годовой по Яндекс.Картам; тарифы 1 900 / 2 400 / 2 800 ₽ в месяц",
+  "r": 4.9,
+  "v": 176,
+  "rv": 102,
+  "ver": "4,9, но всего 176 оценок — клуб новый. Хвалят тренажёры и чистоту, редкие жалобы — духота.",
+  "gy": "Открыт 10 июля 2025 — оборудование новое, «премиальные тренажёры» (реклама 2ГИС)",
+  "gq": "«новые тренажёры», «огромный выбор тренажёров, большая зона кардио»",
+  "seg": "Средний сегмент",
+  "segc": "b2",
+  "km": 4.3,
+  "tmin": 7,
+  "tpeak": 10,
+  "fuel": 9731,
+  "save": 32814,
+  "tot": 27514,
+  "base": 0
+ },
+ {
+  "n": "B-Gym",
+  "a": "пр. Октября, 158 / Губайдуллина, 10/1; бассейн — 8 Марта, 7А",
+  "d": "Советский",
+  "s": "b-gym.ru",
+  "u": "https://b-gym.ru/price",
+  "p": 1,
+  "pn": "отдельный бассейн сети, включён в подписку",
+  "g": 1,
+  "gr": "TOTAL-BODY, STEP-INTERVAL, FUNCTIONAL TRAINING, UPPER_BODY, LOWER_BODY, ABS-STRETCHING, Пилатес (метод Д. Пилатеса), Тайский бокс (муай тай).",
+  "pr": 11500,
+  "pl": "11 500 ₽",
+  "pnote": "12 мес: безлимит + 1 занятие с тренером + бассейн в подарок; Яндекс.Карты дают 2 800–9 000 ₽",
+  "r": 4.7,
+  "v": 568,
+  "rv": 200,
+  "ver": "4,7 при 568 оценках. Хвалят тренеров и цену, из минусов — очереди в час пик.",
+  "gy": "Филиал на Губайдуллина открыт в 2026; марки и год обновления не раскрыты",
+  "gq": "«пуфики тренажёров большинство порваны, хотя возили на перепрошивку» — состояние спорное",
+  "seg": "Бюджет",
+  "segc": "b1",
+  "km": 8.7,
+  "tmin": 12,
+  "tpeak": 17,
+  "fuel": 19688,
+  "save": 22857,
+  "tot": 29857,
+  "base": 0
+ },
+ {
+  "n": "Mendeleef Fitness",
+  "a": "ул. Менделеева, 137, ТРК «Иремель»",
+  "d": "Кировский, Зелёная роща",
+  "s": "mendeleef.ru",
+  "u": "https://www.mendeleef.ru/",
+  "p": 1,
+  "pn": "25 м, 3 дорожки, круглосуточно",
+  "g": 1,
+  "gr": "Антигравити-йога, Йога, Пилатес, Сайклинг, Памп, Тотал, Фит, Степ, БОСУ, Фитбол, Джим-стик, Джаз-фанк, Дэнс-микс, Латина, Зумба, Восточный танец, Стрип-дэнс, Динамическая растяжка, Пресс, Пресс+растяжка, МФР, Сила, Кросс-фит, Бокс, Мама+, Студия «Реформер», детская секция «Могучие утята» (сухое плавание).",
+  "pr": 15000,
+  "pl": "15 000–38 000 ₽",
+  "pnote": "Диапазон на Яндекс.Картах; акция клуба «безлимит 24/7 — 2 900 ₽/мес» (≈34 800 ₽/год)",
+  "r": 4.9,
+  "v": 1869,
+  "rv": 666,
+  "ver": "4,9 при 1 869 оценках. Хвалят бассейн, тренеров и режим 24/7; типовых жалоб не выявлено.",
+  "gy": "Зал 600 м², свыше 150 тренажёров; «самое современное оборудование» (марки не раскрыты)",
+  "gq": "«все базовые тренажёры (кардио и силовые) в отличном состоянии»",
+  "seg": "Бюджет/Средний",
+  "segc": "b12",
+  "km": 3.5,
+  "tmin": 6,
+  "tpeak": 8,
+  "fuel": 7921,
+  "save": 34624,
+  "tot": 38124,
+  "base": 0
+ },
+ {
+  "n": "Metrofitness",
+  "a": "ул. Менделеева, 137 / Гагарина, 1/3 / Р. Зорге, 12/2",
+  "d": "сеть по городу",
+  "s": "ufa.metrofitness.ru",
+  "u": "https://ufa.metrofitness.ru/",
+  "p": 0,
+  "pn": "нет",
+  "g": 1,
+  "gr": "Хатха-йога, Мобильность суставов, Суставная гимнастика, Фитбол, Силовая тренировка (спина/пресс/руки), Упругие ягодицы, Динамическая растяжка, Растяжка, Растяжка+МФР, Степ-аэробика, Зумба, Леди Дэнс. По филиалам сетка разная.",
+  "pr": 6999,
+  "pl": "6 999 ₽",
+  "pnote": "12 мес безлимит (акция до 24.09.2026); 6 600 ₽ студентам и пенсионерам; реклама «год от 4 999 ₽»",
+  "r": 4.7,
+  "v": 245,
+  "rv": null,
+  "ver": "4,7 при 245 оценках. За эти деньги претензий мало; в отзывах клубы сети часто путают между собой.",
+  "gy": "В Уфе с января 2017 г.; марки и год обновления не раскрыты",
+  "gq": "«большая загруженность зала, очередь на тренажёр и всего один кроссовер» — худшие отзывы по залу",
+  "seg": "Бюджет",
+  "segc": "b1",
+  "km": 8.5,
+  "tmin": 12,
+  "tpeak": 17,
+  "fuel": 19236,
+  "save": 23309,
+  "tot": 34810,
+  "base": 0
+ },
+ {
+  "n": "Insight",
+  "a": "бул. Ибрагимова, 88, ТЦ «Три Кита»",
+  "d": "Советский",
+  "s": "insight-fit.ru",
+  "u": "https://insight-fit.ru/",
+  "p": 0,
+  "pn": "нет",
+  "g": 1,
+  "gr": "TOTAL BODY, TOTAL PRO, PUMP, SCULPT, BODY LOW, BODY BALL, TORSO, CORE & STRETCH, STRETCH, STRETCH MOBILITY, МФР & Stretch, PILATES, YOGA, Здоровая спина, LEGS & BUTTS, 3D Ягодицы, BOXING, STEP 1, CYCLE, CYCLE PRO, FUNCTIONAL, Круговая, Табата, JUMPING, ZUMBA, BELLY DANCE, Port de Bras.",
+  "pr": 16000,
+  "pl": "16 000 ₽",
+  "pnote": "До конца недели: абонемент на 12 месяцев безлимит + 30 дней заморозки — 16 000 ₽",
+  "r": 5.0,
+  "v": 461,
+  "rv": 182,
+  "ver": "На Яндекс.Картах 5,0 при 461 оценке, но Zoon даёт 3,3 — источники расходятся, смотрите оба.",
+  "gy": "Клуб с 2021 г. (в 2026 отмечал 5 лет): «залу почти 3 года, оборудование выглядит как новенькое» (клуб)",
+  "gq": "«тренажёры рабочие, покрытия меняют и чинят сломанное быстро»; в 2022 — «все тренажёры в одном экземпляре, по вечерам очереди»",
+  "seg": "Средний сегмент",
+  "segc": "b2",
+  "km": 1.8,
+  "tmin": 3,
+  "tpeak": 4,
+  "fuel": 4073,
+  "save": 38472,
+  "tot": 40972,
+  "base": 0
+ },
+ {
+  "n": "World Class Уфа",
+  "a": "ул. Революционная, 39/2",
+  "d": "Советский, центр",
+  "s": "worldclass-ufa.ru",
+  "u": "https://www.worldclass-ufa.ru/cards/",
+  "p": 1,
+  "pn": "аквазона, 2 дорожки",
+  "g": 1,
+  "gr": "Групповые и студийные форматы: танцевальные классы, балет, водные программы в бассейне, функциональные тренировки. Публичной сетки нет — расписание доступно членам клуба.",
+  "pr": 56500,
+  "pl": "56 500 – 64 000 ₽",
+  "pnote": "Официальный прайс онлайн-оформления (21.09.2026): утренняя карта 365 дней — 56 500 ₽, дневная 365 дней — 64 000 ₽, индивидуальная карта на 6 мес (183 дня) — 44 000 ₽",
+  "r": 5.0,
+  "v": 610,
+  "rv": null,
+  "ver": "5,0 при 610 оценках. Хвалят персонал, тренеров и 20-летнюю историю клуба в городе.",
+  "gy": "Открыт 23 октября 2006 г.; заявлен «тренажёрный зал с современным оборудованием», марки не раскрыты",
+  "gq": "«крепкая 4+ тренажёрный зал» — сдержанная оценка при премиум-цене",
+  "seg": "Премиум",
+  "segc": "b3",
+  "km": 2.0,
+  "tmin": 4,
+  "tpeak": 6,
+  "fuel": 4526,
+  "save": 38019,
+  "tot": 19,
+  "base": 0
+ },
+ {
+  "n": "Суровка Fit",
+  "a": "д. Суровка, ул. Родниковая, 1",
+  "d": "Уфимский район · 18,8 км от центра",
+  "s": "surovkafit-ufa.ru",
+  "u": "https://surovkafit-ufa.ru/",
+  "p": 1,
+  "pn": "бассейн 25 м, 2–3 дорожки, четырёхступенчатая очистка воды, сауна",
+  "g": 1,
+  "gr": "Аэробика, йога, пилатес, фитбол, Mind&Body, бокс (Boxing), брейк-данс, латина, школа плавания, детские занятия, фитнес-бар.",
+  "gy": "Оздоровительный комплекс за городом: зал со свободными весами, кардио и функциональной зоной; год открытия не раскрыт",
+  "gq": "«тренажёры новые, бассейн», «уютный клуб с приветливым персоналом» — рейтинг 4,9 при 564 оценках (Яндекс)",
+  "pr": 18500,
+  "pl": "18 500 ₽ (акция)",
+  "pnote": "На сайте клуба годовой абонемент — 22 500 ₽ (15 мес — 24 000 ₽, 10 мес — 16 500 ₽); ваша цена 18 500 ₽ попадает в диапазон Яндекс.Карт 15 100–18 500 ₽. Включены бассейн, тренажёрный зал, групповые, сауна.",
+  "r": 4.9,
+  "v": 564,
+  "rv": 172,
+  "seg": "Средний сегмент",
+  "segc": "b2",
+  "ver": "«Небольшой, но уютный фитнес-клуб с приветливым персоналом и супер-тренерами», «тренажёры новые, бассейн, сауна, гуманный ценник». Сильная сторона — вода и тренеры, слабая — всего 2–3 дорожки в бассейне.",
+  "km": 18.8,
+  "tmin": 20,
+  "tpeak": 30,
+  "fuel": 42545,
+  "save": 0,
+  "tot": 0,
+  "base": 1
+ }
+];
+const nf=new Intl.NumberFormat('ru-RU');
+const maxP=Math.max(...D.filter(x=>x.pr).map(x=>x.pr));
+const $=s=>document.querySelector(s);
+function priceCell(x){
+
+  if(!x.pr) return `<div class="price na">${x.pl}</div><div class="note">${x.pnote}</div>`;
+  const w=Math.max(3,Math.round(x.pr/maxP*100));
+  return `<div class="price">${nf.format(x.pr)} &#8381;</div><div class="bar" style="width:${w}%"></div><div class="note">${x.pnote}</div>`;
+}
+function pills(x){
+  return `<span class="pill ${x.p?'y':'n'}">${x.p?'есть':'нет'}</span><div class="note">${x.pn}</div>`;
+}
+function render(){
+  const q=$('#q').value.trim().toLowerCase(), fp=$('#fp').value, fr=$('#fr').value,
+        only=$('#only').checked, sort=$('#sort').value;
+  let rows=D.filter(x=>{
+    if(only&&!x.pr) return false;
+    if(fp==='y'&&!x.p) return false; if(fp==='n'&&x.p) return false;
+    if(fr==='y'&&!(x.r>=4.8)) return false;
+    if(q&&!(x.n+' '+x.a+' '+x.d+' '+x.s).toLowerCase().includes(q)) return false;
+    return true;
+  });
+  const nulls=(a,b)=> (a.pr?0:1)-(b.pr?0:1);
+  rows.sort((a,b)=>{
+    if(sort==='pa') return nulls(a,b)||a.pr-b.pr;
+    if(sort==='pd') return nulls(a,b)||b.pr-a.pr;
+    if(sort==='r') return b.r-a.r||b.v-a.v;
+    if(sort==='v') return b.v-a.v;
+    return a.n.localeCompare(b.n,'ru');
+  });
+  $('#count').textContent=`Показано ${rows.length} из ${D.length} клубов`;
+  $('#tb').innerHTML=rows.map(x=>`<tr>
+   <td class="nm"><b>${x.n}</b><span>${x.a} · ${x.d}</span></td>
+   <td>${pills(x)}</td>
+   <td class="gym"><div class="gyear">${x.gy}</div>${x.gq?`<div class="gquote">${x.gq}</div>`:''}</td>
+   <td><div class="gprog">${x.gr}</div></td>
+   <td>${priceCell(x)}</td>
+   <td class="drive">${x.base?`<b>${x.km.toFixed(1).replace('.',',')} км · ${x.tmin} мин</b><div class="dnote">ваши 30 мин в час пик · бензин <b>${nf.format(x.fuel)} &#8381;</b>/год<br>базовая точка сравнения</div>`:`<b>${x.km.toFixed(1).replace('.',',')} км · ${x.tmin} мин</b><div class="dnote">в пик ≈ ${x.tpeak} мин · бензин <b>${nf.format(x.fuel)} &#8381;</b>/год<br>экономия на бензине <b>+${nf.format(x.save)} &#8381;</b> · с абонементом <b>${x.tot>=0?'+':'\u2212'}${nf.format(Math.abs(x.tot))} &#8381;</b></div>`}</td><td class="seg">${x.pr?`<span class="btag ${x.segc}">${x.seg}</span><em>${x.pl}</em>`:`<span class="btag none">нет цены</span><em>прайс не публикует</em>`}</td>
+   
+   <td class="num"><div class="rate">${x.r.toFixed(1)}</div><div class="votes">${nf.format(x.v)} оц.${x.rv?' · '+nf.format(x.rv)+' отз.':''}</div></td>
+   <td><div class="ver">${x.ver}</div></td>
+   <td><a href="${x.u}" target="_blank" rel="noopener">${x.s}</a></td></tr>`).join('');
+  $('#cards').innerHTML=rows.map(x=>`<article class="card">
+   <h3>${x.n}</h3><div class="addr">${x.a} · ${x.d}</div>
+   <dl><dt>Бассейн</dt><dd>${x.p?'есть':'нет'} — ${x.pn}</dd>
+   <dt>Тренажёрный зал</dt><dd>${x.gy}${x.gq?'<br>'+x.gq:''}</dd>
+   <dt>Групповые программы</dt><dd>${x.gr}</dd>
+   <dt>Год</dt><dd>${x.pr?'<b>'+nf.format(x.pr)+' &#8381;</b>':'<b>'+x.pl+'</b>'} — ${x.pnote}</dd>
+      <dt>Дорога от Кирова, 44</dt><dd>${x.km.toFixed(1).replace('.',',')} км · ${x.tmin} мин (в пик ≈ ${x.tpeak} мин) — бензин ${nf.format(x.fuel)} ₽/год${x.base?' (базовая точка)':', экономия +'+nf.format(x.save)+' ₽/год'}</dd>
+<dt>Рейтинг</dt><dd>${x.r.toFixed(1)} · ${nf.format(x.v)} оц.${x.rv?' · '+nf.format(x.rv)+' отз.':''}</dd>
+   <dt>Сайт</dt><dd><a href="${x.u}" target="_blank" rel="noopener">${x.s}</a></dd></dl>
+   <div class="ver">${x.ver}</div></article>`).join('');
+}
+['q','fp','fr','only','sort'].forEach(id=>{const e=$('#'+id);e.addEventListener('input',render);e.addEventListener('change',render)});
+document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
+  const [k,v]=c.dataset.k.split(':');
+  $('#'+k).value=v; document.querySelectorAll(`.chip[data-k^="${k}:"]`).forEach(o=>o.setAttribute('aria-pressed',o===c));
+  render();
+}));
+$('#reset').addEventListener('click',()=>{
+  $('#q').value='';$('#fp').value='any';$('#fr').value='any';$('#only').checked=false;$('#sort').value='pa';
+  document.querySelectorAll('.chip').forEach(o=>o.setAttribute('aria-pressed',o.dataset.def==='1'));
+  render();
+});
+document.querySelectorAll('th.sortable').forEach(th=>th.addEventListener('click',()=>{
+  $('#sort').value=th.dataset.s; render();
+  document.querySelectorAll('th.sortable').forEach(o=>o.removeAttribute('aria-sort'));
+  th.setAttribute('aria-sort',$('#sort').value==='pa'?'ascending':'descending');
+}));
+const priced=D.filter(x=>x.pr).sort((a,b)=>a.pr-b.pr);
+const BANDS=[{n:'Бюджет',hi:15000},{n:'Средний сегмент',hi:40000},{n:'Премиум',hi:Infinity}];
+const bandOf=p=>BANDS.find(b=>p<=b.hi)||BANDS[2];
+const plural=(n,a,b,c)=>{const m=n%100;return n+' '+(n%10==1&&m!=11?a:(n%10>=2&&n%10<=4&&(m<12||m>14)?b:c))};
+$('#scale').innerHTML=BANDS.map((b,i)=>{
+  const lo=i?BANDS[i-1].hi:0, L=lo/maxP*100, R=Math.min(b.hi,maxP)/maxP*100;
+  const cnt=D.filter(x=>x.pr&&x.pr>lo&&(b.hi===Infinity||x.pr<=b.hi)).length;
+  const rng=lo?(nf.format(lo)+'\u2013'+(b.hi===Infinity?'\u221e':nf.format(b.hi))+'\u00A0&#8381;'):('до\u00A0'+nf.format(b.hi)+'\u00A0&#8381;');
+  return `<div class="band b${i+1}" style="left:${L}%;width:${R-L}%"><span>${b.n}</span><em>${rng}<br>${plural(cnt,'клуб','клуба','клубов')}</em></div>`;
+}).join('')
+ +'<div class="axis"></div>'
+ +[0,15000,40000,60000,80000].map(t=>`<div class="tick" style="left:${t/maxP*100}%"><i>${t?nf.format(t/1000)+'\u00A0тыс':'0'}</i></div>`).join('')
+ +priced.map(x=>`<div class="dot" style="left:${x.pr/maxP*100}%" title="${x.n} — ${nf.format(x.pr)} &#8381; · ${bandOf(x.pr).n}"></div>`).join('')
+ +`<div class="dlab" style="left:${priced[0].pr/maxP*100}%">${priced[0].n}<em>${nf.format(priced[0].pr)} &#8381;</em></div>`
+ +`<div class="dlab" style="left:${priced[priced.length-1].pr/maxP*100}%">${priced[priced.length-1].n}<em>${nf.format(priced[priced.length-1].pr)} &#8381;</em></div>`;
+$('#snote').innerHTML='Ось — цена годового абонемента, \u20BD. Полосы делят рынок по цене, а не по качеству: '
+ +BANDS.map((b,i)=>{const lo=i?BANDS[i-1].hi:0;const cnt=D.filter(x=>x.pr&&x.pr>lo&&(b.hi===Infinity||x.pr<=b.hi)).length;
+   return `<b>${b.n}</b> — ${lo?nf.format(lo)+'\u2013'+(b.hi===Infinity?'\u221e':nf.format(b.hi)):'до '+nf.format(b.hi)} \u20BD, ${plural(cnt,'клуб','клуба','клубов')}`}).join(' \u00B7 ')
+ +'. Кто прайс не публикует — '+D.filter(x=>!x.pr).map(x=>x.n).join(', ')+' — на шкале отсутствует.';
+const vals=priced.map(x=>x.pr), med=vals[Math.floor(vals.length/2)];
+$('#med').textContent=nf.format(med)+' \u20BD';
+$('#minp').textContent=nf.format(vals[0])+' \u20BD';
+$('#pools').textContent=D.filter(x=>x.p).length+' из '+D.length;
+render();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
+</body></html>
